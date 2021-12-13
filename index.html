@@ -22,32 +22,35 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>Toronto</h1>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <h1>Toronto</h1>
 
-        <ul>
-          <li>Sunday, December 12, 2021 at 5:35pm</li>
-          <li>Snow</li>
-        </ul>
-
-        <div class="row">
-          <div class="col-md-6">
-            <i class="fas fa-snowflake"></i>
-
-            5 ºC | ºF
-          </div>
-
-          <div class="col-md-6">
             <ul>
-              <li>Precipitation: 0%</li>
-
-              <li>Humidity: 10%</li>
-
-              <li>Wind: 2 km/h</li>
+              <li>Sunday, December 12, 2021 at 5:35pm</li>
+              <li>Snow</li>
             </ul>
           </div>
-        </div>
 
+          <div class="row">
+            <div class="col-md-6">
+              <div class="clearfix weather-temperature">
+                <i class="fas fa-snowflake float-left"></i>
+                <strong>5</strong>
+                <span class="units"> ºC | <a href="#">ºF</a></span>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 10%</li>
+                <li>Wind: 2 km/h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <small>
           <a
             href="https://github.com/TizianaMancini/Weather-App"
