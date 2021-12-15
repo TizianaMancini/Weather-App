@@ -42,10 +42,9 @@ li::first-letter {
   margin-bottom: 20px;
 }
 
-.weather-temperature i {
+.weather-temperature img {
   margin-right: 5px;
-  font-size: 60px;
-  text-align: center;
+  vertical-align: top;
 }
 
 .weather-temperature strong {
