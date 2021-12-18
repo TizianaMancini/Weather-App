@@ -39,9 +39,9 @@ li::first-letter {
 
 .weather-app {
   padding: 20px;
-  border: 2px solid black;
+  border: 4px solid black;
   border-radius: 25px;
-  background: #354f82;
+  background: #4264a8;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -63,7 +63,7 @@ li::first-letter {
 }
 
 .weather-temperature a {
-  color: #ecb2c5;
+  color: #d66570;
 }
 
 .weather-temperature .units {
