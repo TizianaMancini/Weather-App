@@ -92,8 +92,8 @@ function displayForecast(response) {
         forecastHTML +
         `
       <div class="col-2">
-        <div class="card bg-light" id="card-body">
-        <div class="card-body">
+        <div class="card bg-light border-0" id="card-body">
+        <div class="card-body rounded pt-2 pb-2" style="width: 90px">
             <div class="weather-forecast-date">${formatDay(
               forecastDay.dt
             )}</div>
