@@ -37,7 +37,7 @@ li::first-letter {
 }
 
 .weather-app-wrapper {
-  max-width: 675px;
+  max-width: 725x;
   margin: 30px auto;
 }
 
@@ -109,4 +109,9 @@ li::first-letter {
   background: #8497b8;
   width: 100px;
   padding: 0;
+}
+
+.forecast-description {
+  font-size: 11px;
+  text-transform: capitalize;
 }

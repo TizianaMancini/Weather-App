@@ -1,3 +1,5 @@
+//creates the updated date and time
+
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -86,6 +88,8 @@ function displayForecast(response) {
     "Saturday",
   ];
 
+  //finds the weather for the future forecast days
+
   forecast.forEach(function (forecastDay, index) {
     if ((index > 0) & (index < 7)) {
       forecastHTML =
@@ -93,7 +97,7 @@ function displayForecast(response) {
         `
       <div class="col-2">
         <div class="card bg-light border-0" id="card-body">
-        <div class="card-body rounded pt-2 pb-2" style="width: 90px">
+        <div class="card-body rounded pt-2 pb-2" style="width= 90px">
             <div class="weather-forecast-date">${formatDay(
               forecastDay.dt
             )}</div>
@@ -104,6 +108,11 @@ function displayForecast(response) {
           alt="cloudy"
           width="70"
         />
+
+        <div class="forecast-description">${
+          forecastDay.weather[0].description
+        }</div>
+
         <div class="weather-forecast-temperatures">
           <span class="weather-forecast-temperature-max"> ${Math.round(
             forecastDay.temp.max
