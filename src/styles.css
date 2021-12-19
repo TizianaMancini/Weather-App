@@ -32,12 +32,17 @@ hr {
   border: 2px solid white;
 }
 
+small {
+  display: block;
+  text-align: center;
+}
+
 li::first-letter {
   text-transform: capitalize;
 }
 
 .weather-app-wrapper {
-  max-width: 725x;
+  max-width: 725px;
   margin: 30px auto;
 }
 
