@@ -1,12 +1,12 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #a9a9a9;
 }
 
 h1 {
   color: whitesmoke;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 28px;
   margin-bottom: 0;
 }
