@@ -72,6 +72,20 @@ function formatDay(timestamp) {
   return days[day];
 }
 
+//current location button
+
+function searchLocation(position) {
+  let apiKey = "fc792abbce83245fb7f94d72bd9f905d";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
 // Creates the forecast for multiple days
 function displayForecast(response) {
   let forecast = response.data.daily;
@@ -209,5 +223,9 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+// clicking the current location button
+let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
 
 search("Toronto");

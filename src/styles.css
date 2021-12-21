@@ -120,3 +120,8 @@ li::first-letter {
   font-size: 11px;
   text-transform: capitalize;
 }
+
+.current-location-button {
+  font-size: 14px;
+  height: 38px;
+}
